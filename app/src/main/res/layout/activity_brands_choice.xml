@@ -82,6 +82,7 @@
                     android:layout_marginBottom="32dp"
                     android:layout_weight="1"
                     android:background="@drawable/custom_btn_brands"
+                    android:contentDescription="adidas"
                     app:srcCompat="@drawable/adidas_logo_svgrepo_com" />
 
                 <ImageButton
@@ -94,6 +95,7 @@
                     android:layout_marginBottom="32dp"
                     android:layout_weight="1"
                     android:background="@drawable/custom_btn_brands"
+                    android:contentDescription="gucci"
                     app:srcCompat="@drawable/gucci_logo_svgrepo_com" />
             </LinearLayout>
 
@@ -113,6 +115,7 @@
                     android:layout_marginBottom="32dp"
                     android:layout_weight="1"
                     android:background="@drawable/custom_btn_brands"
+                    android:contentDescription="balenciaga"
                     app:srcCompat="@drawable/balenciaga_logo_wine" />
 
                 <ImageButton
@@ -125,6 +128,7 @@
                     android:layout_marginBottom="32dp"
                     android:layout_weight="1"
                     android:background="@drawable/custom_btn_brands"
+                    android:contentDescription="off white"
                     app:srcCompat="@drawable/off_white_logo_logo_svgrepo_com" />/>
 
             </LinearLayout>
@@ -145,6 +149,7 @@
                     android:layout_marginBottom="32dp"
                     android:layout_weight="1"
                     android:background="@drawable/custom_btn_brands"
+                    android:contentDescription="the north face"
                     app:srcCompat="@drawable/the_north_face_1_logo_svgrepo_com" />
 
                 <ImageButton
@@ -157,9 +162,23 @@
                     android:layout_marginBottom="32dp"
                     android:layout_weight="1"
                     android:background="@drawable/custom_btn_brands"
+                    android:contentDescription="vans"
                     app:srcCompat="@drawable/vans_3_logo_svgrepo_com" />
 
             </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="411dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#1D1D1D"
+                android:backgroundTint="#1D1D1D"
+                android:fontFamily="@font/neuemachina_bold"
+                android:onClick="camFromBrands"
+                android:text="NEXT"
+                android:textColor="#E4FE73"
+                android:textSize="24sp" />
 
         </LinearLayout>
     </ScrollView>

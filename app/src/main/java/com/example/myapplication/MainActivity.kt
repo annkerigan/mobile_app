@@ -10,6 +10,8 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import android.content.Intent
 import com.example.myapplication.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -57,5 +59,20 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         return navController.navigateUp(appBarConfiguration)
                 || super.onSupportNavigateUp()
+    }
+
+    fun brandsFromStart(view: View) {
+        val randomIntent = Intent(this, brands_choice::class.java);
+        startActivity(randomIntent);
+    }
+
+    fun camFromBrands(view: View) {
+        val randomIntent = Intent(this, cam::class.java);
+        startActivity(randomIntent);
+    }
+
+    fun scanFromCam(view: View) {
+        val randomIntent = Intent(this, scan::class.java);
+        startActivity(randomIntent);
     }
 }

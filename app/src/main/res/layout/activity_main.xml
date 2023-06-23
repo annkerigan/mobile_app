@@ -124,14 +124,15 @@
             android:id="@+id/btn_continue"
             android:layout_width="match_parent"
             android:layout_height="48dp"
+            android:background="@drawable/custom_btn"
             android:fontFamily="@font/work_sans"
+            android:onClick="brandsFromStart"
+            android:text="continue"
+            android:textAllCaps="false"
             android:textColor="@android:color/black"
             android:typeface="normal"
             app:cornerRadius="0dp"
-            app:iconPadding="0dp"
-            android:text="continue"
-            android:textAllCaps="false"
-            android:background="@drawable/custom_btn"/>
+            app:iconPadding="0dp" />
 
         <Button
             android:id="@+id/btn_login"
